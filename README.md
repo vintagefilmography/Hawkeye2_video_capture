@@ -120,5 +120,9 @@ Set the trame rate to 4 FPS.
 Turn Constant Expeo to ON. This is important because if set to off the camera will pick up it own shutter speed.
 This is not mentioned in the referenced youtube video.
 
+## Macro Lens
+There are many out there that will do the job.  
+Venus Laowa is a pretty good pick. It has more than enough magnification and good image quality and it is reasonably priced.
+https://www.venuslens.net/product/laowa-25mm-f-2-8-2-5-5x-ultra-macro-2/
 
 
