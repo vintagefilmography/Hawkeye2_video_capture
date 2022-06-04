@@ -102,9 +102,23 @@ It is to be noted that the UP and DOWN sequence can be reversed if the Film adva
 In that case turn the UP switch on first followed by the DOWN switch.   
 Once done, turn the DOWN switch off first followed by the UP switch.
 
-
-
-
+## Camera  
+The camera used should be capable of causom frame rates. 
+Sony A7iii supports custom rates but it is quite expensive.
+An alternative is to obtain teh T3i body and add the macro lens. 
+The stock camera does not support the custom frame rates but there is a custom software available that enables   
+custom frame rates and raw video.
+Refer to https://magiclantern.fm/  
+for more details.
+For setting up the camera refer to:
+https://www.youtube.com/watch?v=NYGseJ7Sofk  
+It is to be noted that Magic Lantern does not enable the custom frame rates.
+Go to  the Magic Lantern Settings (delete key)
+Then select the video page.  
+Then select FPS Override  
+Set the trame rate to 4 FPS.  
+Turn Constant Expeo to ON. This is important because if set to off the camera will pick up it own shutter speed.
+This is not mentioned in the referenced youtube video.
 
 
 
