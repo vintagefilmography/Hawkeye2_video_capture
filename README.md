@@ -1,20 +1,27 @@
 # Hawkeye2_video_capture
-The purpose of this project is to provide the instructions to the user on how to modify the existing 8mm film projector for the video capture directly into the camera using a small MSP430 based board.  
-Generally the projects of this type require several modifications to the projector including the light change, and motor change.
-This project also requires the light change and the motor change, but unlike similar other projects, it allows for slow frame rate video using a DSLR camera. No trigger is required since the camera runs in video mode. The controller is programmed to precisely control the stepper motor rotation to provide the proper FPS which matches the FPS of the camera.  
+The purpose of this  readme is to provide the instructions to the user on how to modify the existing 8mm film projector for the video capture directly into the camera using a small MSP430 based board.  
+Similar to other projects of this type, this one also requires several modifications to the projector including the light change, and motor change but unlike other projects of this type it provides the DSLR camera capability. The DSLR can be used ina slow video mode or frame-by-frame mode using the external camera trigger. This capability is provided by the Hawkeye2 controller. 
+For more information on Howkeye2 send the info request to:  
+sjelavic123@gmail.com
+In frame-by-frame mode the camera trigger is provided by the Hawkeye2 board and in video mode no trigger is required at all.  
+In video mode T=the controller is programmed to precisely control the stepper motor rotation to provide the proper FPS which matches the FPS of the camera.
+In frame-by-frame mode the Hawkeye2 board is tuned to provide the camera trigger after each rotation of the projector cam.  
+This readme covers teh video mode only and for the farme-by-frame info refer to the following page:
+https://github.com/vintagefilmography/Hawkeye2_frame_by_frame  
+
 
 System Components
 
 ![IMG_20220504_144707](https://user-images.githubusercontent.com/48537944/166855115-0297680d-0524-4b80-a290-e62c47861d60.jpg)
 
 ## Hawkeye2 Controller  
-At the heart of the system is the Hawkeye2 controller. This is a custom design. All design info is available gere is this repository. The board details are included in  the homemade-v3 folder. Download the folder to your Eagle project directory and there you will have access to the schematic and the board layout. 
-The MSP430 micro controller firmware is available in the MSP folder. Download the zip file from there and save it in you TI Code Composer project directory. From there you can edit the source and flash the target by using TI Launchpad.  
+At the heart of the system is the Hawkeye2 controller. This is a custom design. All design info is available here isn this repository. The board details are included in  the homemade-v3 folder. Download the folder to your Eagle project directory and there you will have access to the schematic and the board layout. 
+The MSP430 micro controller firmware is available in the MSP folder. Download the zip file from there and save it in your TI Code Composer project directory. From there you can edit the source and flash the target by using TI Launchpad.  
 There are two more boards included. One is for the front panel switches and the other is for the switch interface board. Follow the included wiring diagram to interconnect the system.
 ## Stepper Driver  
 The stepper driver is an off the shelf product. 
 https://www.amazon.com/gp/product/B075HBJP51/
-There are many other variants available. This particular one is a good choice because it has 256 micro steps allowing for a very precise tuning control. One disadvantage is that it operates from a 24VDC source so that 2 DC adaprers are required, one for the driver and the other one for the controller that requires 12VDC source.  
+There are many other variants available. This particular one is a good choice because it has 256 micro steps allowing for a very precise tuning control. One disadvantage is that it operates from a 24VDC source so that two DC adaprers are required, one for the driver and the other one for the controller that requires 12VDC source.  
 Driver dip switches  
 The following is recommended:
 SW4 - Half Currect
@@ -51,73 +58,41 @@ The control switches control the operation of the unit.
 ### RUN Switch
 Pauses the operation  
 ### ALIGN
-Slowly advances the film until the frame is centered in the camera. Also turns tuning on if activated in run mode.  
+Not used in video mode.  
 ### REW
-Turns takeup continuously on if run switch is off.  
-The switch can also be used in conjuction with the PROJ switch to select the projector type. 
-I.e. if the setup is used with multiple projectors then the projector synchronization can be saved in non volatile memory.  
-Four memory locations are available:   
-REW     PROJ  
-0       0       Projector1  
-0       1       Projector2  
-1       0       Projector3  
-1       1       Projector4  
-The switches are active only during a short time after the power is plugged in and in most cases the only Projector1 selection will be used.  
-
-
+Not used in video mode
 ### PROJ 
-Seects the projector type used. In most cases this switch will be kept off. 
-The projector selection is read by the firmware upon board power up and cannot be changed after that during normal operation.  
+Nt used in video mode
 ### UP and DOWN switches 
-Used during tuning mode to run change the length of stepper advance.  
+Not used in video mode
 ### Up and DOWN buttons
-Located on the controller board, used for fine tuning of the stepper  
+Not used in video mode
 ### REV Switch 
 Reverses the motor rotation for film rewind.  
 
 ## Operation
 Very straight forward. Here is a short video showing the operation.  
-https://photos.app.goo.gl/MLEgviiinpVREHCQA  
-As the video shows, plug the power in for both the controller and the driver and then flip the ADV switch on until the projector is finished with the film frame advance and at that point turn the ADV switch off. Then, connect the camera trigger and turn the camera on. Turn the RUn switch on the the camera will start capturing the farmes. If at any point the system starts goung out of sync you can resync it by using the ADV switch or alternatively, turn the ALG switch on and the hit the UP or DOWN button just once.   
-The UP button makes the run shorter and the DOWN button makes it longer.  
+Plug in the 24V and 12V external power sources. Make sure that they are not reversed which can result in the Hawkeye2 board damage.  
 
 ## Tuning the Stepper  
-Turn the RUN switch on. Make sure all other switches are off.
-![image](https://user-images.githubusercontent.com/48537944/167198893-b7b94d33-e3a4-4934-8207-8972e0525aaf.png)
-
-Turn the ALIGN switch on.  
-This puts the controller into tuning mode.  
-Turn on the DOWN switch. This makes the stepper step one count longer.  
-While the DOWN switch is still on, turn on the UP switch.  
-This will cause continuous stepper count increase. You will see that the film advance becomes larger and larger.   
-After a while the stepper motor advance will  be close to one full turn of the projector cam.  
-Once the alignment is close to a full cam rotation, turn the UP switch off and then the DOWN switch off.   
-Continue with fine tuning by using the controller board mounted UP and DOWN buttons.  
-The UP button will make the advance shorter by one count and conversely, the DOWN button will make it longer by one count.  
-Once the alignment is done DO NOT POWER THE BOARD DOWN.  
-Turn the ALIGN switch off and then the RUN switch off. Then you can power the board down.  
-Power the board up again with the correct memory selected.
-Turn the RUN switch on and check that the alignment was restored properly from the memory.  
-It is to be noted that the UP and DOWN sequence can be reversed if the Film advance is too large.  
-In that case turn the UP switch on first followed by the DOWN switch.   
-Once done, turn the DOWN switch off first followed by the UP switch.
+In video mode no stepper tuning is required. It is preprogrammed for 4 FPS.
 
 ## Camera  
-The camera used should be capable of causom frame rates. 
+The camera used should be capable of caustom frame rates. 
 Sony A7iii supports custom rates but it is quite expensive.
-An alternative is to obtain teh T3i body and add the macro lens. 
+An alternative is to obtain the T3i body and add the macro lens. 
 The stock camera does not support the custom frame rates but there is a custom software available that enables   
 custom frame rates and raw video.
 Refer to https://magiclantern.fm/  
 for more details.
 For setting up the camera refer to:
 https://www.youtube.com/watch?v=NYGseJ7Sofk  
-It is to be noted that Magic Lantern does not enable the custom frame rates.
+Once the Magic lantern firmware is installed, you will have to tune the camera frame rate to the stepper speed. .
 Go to  the Magic Lantern Settings (delete key)
 Then select the video page.  
 Then select FPS Override  
-Set the trame rate to 4 FPS.  
-Turn Constant Expeo to ON. This is important because if set to off the camera will pick up it own shutter speed.
+Set the frame rate to 4 FPS.  
+Turn Constant Expo to ON. This is important because if set to off the camera will pick up it own shutter speed.
 This is not mentioned in the referenced youtube video.
 
 ## Macro Lens
