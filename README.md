@@ -106,12 +106,12 @@ If the frame rates are off got back to the FPS Override screen and tweak the Tim
 Timer A and B and used to set the frame rates and the exposure time. Generally the settings for these timers are not well explained so here is a short explanation that will potentially help.  
 The frame rate and the shutter speed  are derived from the main clock. the two timers are used to devide the clock down to get the right frame rates and exposure (shutter speed). Since we use a relatively slow frame rate of 4 FPS the danger is that the rolling shutter can cause some undesired distortions if the shutter speed is too high. The rolling shutter essentially grabs one line of teh sensor at the time so the scene will be different from the bottom and top line. I.e. the scene that was used for the bottom line will not be the same as the scene for the top line. It will be shifted at slow FPS producing the jello like effect. 
 This is why Magic Lantern restricts the values of the timers and changes them automatically to reduce the unwanted effects. But unfortunatelly the automatic mode is not very suitable for the film scan and will result in flicker. The way around it is to override the magic Lantern auto settings. That is available on the FPS override screen.  
-https://www.magiclantern.fm/forum/index.php?topic=4718.0;prev_next=prev#new
+![image](https://user-images.githubusercontent.com/48537944/172066458-05501697-061e-405c-bfe0-dad2fb506449.png)
 Scrawl down to the "Optimize for" line and hit the Q button.
 Set the optimization to fast.  
 This will allow for custom shutter speed. 
-
-  
+There is a discussion on this topic in the Magic Lantern forum. It may help a bit.
+https://www.magiclantern.fm/forum/index.php?topic=4718.0;prev_next=prev#new
 
 
 ## Macro Lens
