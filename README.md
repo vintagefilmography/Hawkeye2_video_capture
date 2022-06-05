@@ -99,9 +99,20 @@ Once done with these changes you can proceed to the tuning part.
 As shown in the attact picture, turn the camera on and turn on live preview. This will start teh Magic Lantern software. Then press the delete button. The settings screen will pop up. Go to  the Movie screen and select FPS OVerride. Then press the Q button on the T3i. Othe camera types will have a similar button. The FPS Override screen will pop up. 
 ![image](https://user-images.githubusercontent.com/48537944/172065508-eeb83ff0-b7ae-45aa-86df-2e59e3ea5d34.png)  
 Set the desired FPS to 4. 
+Go back to the FPS Override screen and set the Optimization for fast.
 Press the delete button again to get out of the settings screen.
-Run a test video with the projector running.   
+Run a test video with the projector running.   Make sure to set the shutter speed around 300 (use the wheel on the top of the camera)
 If the frame rates are off got back to the FPS Override screen and tweak the Timer B value one step at the time and rerun the test until the camera is in full sync with the projector.
+Timer A and B and used to set the frame rates and the exposure time. Generally the settings for these timers are not well explained so here is a short explanation that will potentially help.  
+The frame rate and the shutter speed  are derived from the main clock. the two timers are used to devide the clock down to get the right frame rates and exposure (shutter speed). Since we use a relatively slow frame rate of 4 FPS the danger is that the rolling shutter can cause some undesired distortions if the shutter speed is too high. The rolling shutter essentially grabs one line of teh sensor at the time so the scene will be different from the bottom and top line. I.e. the scene that was used for the bottom line will not be the same as the scene for the top line. It will be shifted at slow FPS producing the jello like effect. 
+This is why Magic Lantern restricts the values of the timers and changes them automatically to reduce the unwanted effects. But unfortunatelly the automatic mode is not very suitable for the film scan and will result in flicker. The way around it is to override the magic Lantern auto settings. That is available on the FPS override screen.  
+https://www.magiclantern.fm/forum/index.php?topic=4718.0;prev_next=prev#new
+Scrawl down to the "Optimize for" line and hit the Q button.
+Set the optimization to fast.  
+This will allow for custom shutter speed. 
+
+  
+
 
 ## Macro Lens
 There are many out there that will do the job.  
