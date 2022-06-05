@@ -94,10 +94,21 @@ Then select FPS Override
 Set the frame rate to 4 FPS.  
 Turn Constant Expo to ON. This is important because if set to off the camera will pick up it own shutter speed.
 This is not mentioned in the referenced youtube video.
+Once done with these changes you can proceed to the tuning part. 
+![image](https://user-images.githubusercontent.com/48537944/172065363-53090a44-6c1e-469d-9352-3fc1c2dfb79d.png)  
+As shown in the attact picture, turn the camera on and turn on live preview. This will start teh Magic Lantern software. Then press the delete button. The settings screen will pop up. Go to  the Movie screen and select FPS OVerride. Then press the Q button on the T3i. Othe camera types will have a similar button. The FPS Override screen will pop up. 
+![image](https://user-images.githubusercontent.com/48537944/172065508-eeb83ff0-b7ae-45aa-86df-2e59e3ea5d34.png)  
+Set the desired FPS to 4. 
+Press the delete button again to get out of the settings screen.
+Run a test video with the projector running.   
+If the frame rates are off got back to the FPS Override screen and tweak the Timer B value one step at the time and rerun the test until the camera is in full sync with the projector.
 
 ## Macro Lens
 There are many out there that will do the job.  
 Venus Laowa is a pretty good pick. It has more than enough magnification and good image quality and it is reasonably priced.
-https://www.venuslens.net/product/laowa-25mm-f-2-8-2-5-5x-ultra-macro-2/
+https://www.venuslens.net/product/laowa-25mm-f-2-8-2-5-5x-ultra-macro-2/  
+
+
+
 
 
