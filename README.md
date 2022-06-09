@@ -1,47 +1,26 @@
 # Hawkeye2_video_capture
-The purpose of this  readme is to provide the instructions to the user on how to modify the existing 8mm film projector for the video capture directly into the camera using a small MSP430 based board.  
-Similar to other projects of this type, this one also requires several modifications to the projector including the light change, and motor change but unlike other projects of this type it provides the DSLR camera capability. The DSLR can be used ina slow video mode or frame-by-frame mode using the external camera trigger. This capability is provided by the Hawkeye2 controller. 
-For more information on Howkeye2 send the info request to:  
-sjelavic123@gmail.com
-In frame-by-frame mode the camera trigger is provided by the Hawkeye2 board and in video mode no trigger is required at all.  
-In video mode T=the controller is programmed to precisely control the stepper motor rotation to provide the proper FPS which matches the FPS of the camera.
-In frame-by-frame mode the Hawkeye2 board is tuned to provide the camera trigger after each rotation of the projector cam.  
-This readme covers teh video mode only and for the farme-by-frame info refer to the following page:
-https://github.com/vintagefilmography/Hawkeye2_frame_by_frame  
+This setup consists of a modified projector and the T3i Canon camera. The setup provides the 8mm film capture running at 3FPS and outputs the video in ML (Magic Lantern) RAW format in 1728x972 resolution.  
+The purpose of this  readme is to provide the instructions to the user on how to modify the existing 8mm film projector for the video capture directly into the camera using a small off the shelf stepper controller.  
+Similar to other projects of this type, this one also requires several modifications to the projector including the light change, and motor change but unlike other projects of this type it provides the DSLR camera capability and RAW video format. The DSLR is used in a slow video mode.  
+The stepper controller is programmed to precisely control the stepper motor rotation to provide the proper FPS which matches the FPS of the camera.  
 
-
-System Components
+System Components  
 
 ![IMG_20220504_144707](https://user-images.githubusercontent.com/48537944/166855115-0297680d-0524-4b80-a290-e62c47861d60.jpg)
 
-## Hawkeye2 Controller  
-At the heart of the system is the Hawkeye2 controller. This is a custom design. All design info is available here isn this repository. The board details are included in  the homemade-v3 folder. Download the folder to your Eagle project directory and there you will have access to the schematic and the board layout. 
-The MSP430 micro controller firmware is available in the MSP folder. Download the zip file from there and save it in your TI Code Composer project directory. From there you can edit the source and flash the target by using TI Launchpad.  
-There are two more boards included. One is for the front panel switches and the other is for the switch interface board. Follow the included wiring diagram to interconnect the system.
-## Stepper Driver  
-The stepper driver is an off the shelf product. 
-https://www.amazon.com/gp/product/B075HBJP51/
-There are many other variants available. This particular one is a good choice because it has 256 micro steps allowing for a very precise tuning control. One disadvantage is that it operates from a 24VDC source so that two DC adaprers are required, one for the driver and the other one for the controller that requires 12VDC source.  
-Driver dip switches  
-The following is recommended:
-SW4 - Half Currect
-Current - 
-1.4A for this type motor https://www.amazon.com/gp/product/B00PNEQKC0/
-2.7A for this type motor https://www.amazon.com/gp/product/B00PNEPF5I/
-Set the pulse/rev switches for the highest speed that can still hold the torque and there is no skipping of steps. Skipping will result in loss of synchronization.  
+## Stepper Controller  
+At the heart of the system is the SMC02 stepper controller. 
+
 ## Stepper Motor  
-These two motors were tested.
-1.4A for this type motor https://www.amazon.com/gp/product/B00PNEQKCdesigned with Spark0/
+Use the following stepper.
 2.7A for this type motor https://www.amazon.com/gp/product/B00PNEPF5I/
-You will have to design a bracket for the motor so that it fits properly in the projector after you remove the old motor. 
-A sample stepper bracket is included here as a good staring point. Use the Designspark Mechanical free software to modify the bracket for your projector.
+Other steppers may also work but are not covered in this readme.  
+If you are planning to pull the projector transport out, then you can use the mounting bracket from this repo.  Check the mechanical parts folder. 
 
 ## Pulley
-There are quite a few pulleys avaliable online.  
-Example:  
-https://www.amazon.com/gp/product/B07C4R3PGV/  
+This pulley is recommended. You will also need a sleeve because the pulley bore is slightly larger than the motor shaft. 
+Check t mechanical folder for the sleeve sdl.
 https://www.amazon.com/gp/product/B07C4QD1BV/
-You can also design your own. A sample design will be included here shortly.
 
 ## Belt
 This used to be a big problem but with the neophrene Urethane belting that became available it is easy to make your own custom belt.
@@ -49,27 +28,9 @@ https://www.amazon.com/gp/product/B07L3W7Z1N
 Follow the following instructions:  
 https://www.youtube.com/watch?v=mBtHvPWVgDw
 
-## Control Switches:
-
-
-![front_panel](https://user-images.githubusercontent.com/48537944/167196521-d25ae0d0-ba29-4e8c-b0fa-85e9202a8518.png)
-
-The control switches control the operation of the unit.  
-### RUN Switch
-Pauses the operation  
-### ALIGN
-Not used in video mode.  
-### REW
-Not used in video mode
-### PROJ 
-Nt used in video mode
-### UP and DOWN switches 
-Not used in video mode
-### Up and DOWN buttons
-Not used in video mode
-### REV Switch 
-Reverses the motor rotation for film rewind.  
-
+## Assembly
+Print out all of the parts from the mechanical folder. If you do not have the pronter then you can get them done  outside but it will become rather costly. Getting a new 3D printer will probably be cheaper in a long run.
+Use  
 ## Operation
 Very straight forward. Here is a short video showing the operation.  
 Plug in the 24V and 12V external power sources. Make sure that they are not reversed which can result in the Hawkeye2 board damage.  
