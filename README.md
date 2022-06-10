@@ -6,7 +6,8 @@ The stepper controller is programmed to precisely control the stepper motor rota
 
 System Components  
 
-![IMG_20220504_144707](https://user-images.githubusercontent.com/48537944/166855115-0297680d-0524-4b80-a290-e62c47861d60.jpg)
+![system-assembly](https://user-images.githubusercontent.com/48537944/173163427-688c6a8b-efea-417d-83be-57d9c426cfe2.jpg)
+
 
 ## Stepper Controller  
 At the heart of the system is the SMC02 stepper controller. 
@@ -29,7 +30,7 @@ Follow the following instructions:
 https://www.youtube.com/watch?v=mBtHvPWVgDw
 
 ## Assembly
-Print out all of the parts from the mechanical folder. If you do not have the pronter then you can get them done  outside but it will become rather costly. Getting a new 3D printer will probably be cheaper in a long run.
+Print out all of the parts from the mechanical folder. If you do not have the printer then you can get them done  outside but it will become rather costly. Getting a new 3D printer will probably be cheaper in a long run.
 Use  
 ## Operation
 Very straight forward. Here is a short video showing the operation.  
