@@ -32,6 +32,7 @@ https://www.youtube.com/watch?v=mBtHvPWVgDw
 ## Assembly
 Print out all of the parts from the mechanical folder. If you do not have the printer then you can get them done outside but it will become rather costly. Getting a new 3D printer will probably be cheaper in a long run.
 Use a 14"x10"x0.63": piece of wood to mount the components on.  
+https://www.homedepot.com/p/Rubbermaid-Black-Laminated-Wood-Shelf-10-in-D-x-36-in-L-4B2500BLA/100200907
 Additionally cut two additional pieces of wood size 7"x7"x0.63"and 7"x3.6"x0.63". These will be used as a standoff for the projector transport. 
 This will work for the Chinon 2500GL but if other type of projector is used then you will have to figure out how high the the transport has to sit for the proper alignment with the camera.
 Assemble the three pieces of wood as shown.
@@ -39,7 +40,10 @@ Assemble the three pieces of wood as shown.
 Mount the projector transport bracket to the base as shown.
 ![transport_bracket_assembly](https://user-images.githubusercontent.com/48537944/173168094-8e724da4-6d37-4858-b55a-3e116a983f5c.jpg)
 Mount the transport onto the bracket using the original transport mounting screws.
-The transport mounting will need additional support to prevent the film shake. Use an L bracket and mount it as shown. Install the spacer underneath the bracket so that the transport sits perfectly vertical. The spacer is included in the mechanical folder. If the transport is not vertical then adjust the spacer accordingly. Tilted transport will cause focus issues.
+The transport mounting will need additional support to prevent the film shake. Use an L bracket  
+https://www.homedepot.com/p/Everbilt-3-in-Black-Corner-Brace-4-Pack-13741/300985591
+and mount it as shown. Install the spacer underneath the bracket so that the transport sits perfectly vertical. The spacer is included in the mechanical folder. If the transport is not vertical then adjust the spacer accordingly. Tilted transport will cause focus issues.
+![L-bracket](https://user-images.githubusercontent.com/48537944/173199080-41cb0633-4f0e-4695-8817-de35bfda247c.jpg)
 
 Mount the macro lens onto the camera.  
 Mount the camera onto the slider.  
