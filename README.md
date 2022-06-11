@@ -1,9 +1,8 @@
 # SMC02 video capture
 This setup consists of a modified projector and the T3i Canon camera. The setup provides the 8mm film capture running at 3FPS and outputs the video in ML (Magic Lantern) RAW format in 1728x972 resolution.  
 The purpose of this  readme is to provide the instructions to the user on how to modify the existing 8mm film projector for the video capture directly into the camera using a small off the shelf stepper controller.  
-Similar to other projects of this type, this one also requires several modifications to the projector including the light change, and motor change but unlike other projects of this type it provides the DSLR camera capability and RAW video format. The DSLR is used in a slow video mode.  
-The stepper controller is programmed to precisely control the stepper motor rotation to provide the proper FPS which matches the FPS of the camera.  
-
+Similar to other projects of this type, this one also requires several modifications to the projector including the light change, and motor change but unlike other projects of this type it provides the DSLR camera capability and RAW video format. The DSLR is used in a slow video mode. 
+The stepper controller is programmed to precisely control the stepper motor rotation to provide the proper FPS which matches the FPS of the camera with no flicker. 
 System Components  
 
 ![system-assembly](https://user-images.githubusercontent.com/48537944/173163427-688c6a8b-efea-417d-83be-57d9c426cfe2.jpg)
@@ -11,6 +10,7 @@ System Components
 
 ## Stepper Controller  
 At the heart of the system is the SMC02 stepper controller. 
+https://www.ebay.com/itm/175028855543
 
 ## Stepper Motor  
 Use the following stepper.
@@ -30,8 +30,20 @@ Follow the following instructions:
 https://www.youtube.com/watch?v=mBtHvPWVgDw
 
 ## Assembly
-Print out all of the parts from the mechanical folder. If you do not have the printer then you can get them done  outside but it will become rather costly. Getting a new 3D printer will probably be cheaper in a long run.
-Use  
+Print out all of the parts from the mechanical folder. If you do not have the printer then you can get them done outside but it will become rather costly. Getting a new 3D printer will probably be cheaper in a long run.
+Use a 14"x10"x0.63": piece of wood to mount the components on.  
+Additionally cut two additional pieces of wood size 7"x7"x0.63"and 7"x3.6"x0.63". These will be used as a standoff for the projector transport. 
+This will work for the Chinon 2500GL but if other type of projector is used then you will have to figure out how high the the transport has to sit for the proper alignment with the camera.
+Assemble the three pieces of wood as shown.
+![base](https://user-images.githubusercontent.com/48537944/173167740-4549d843-7a39-4b3f-81aa-acde52419084.jpg)
+Mount the projector transport bracket to the base as shown.
+![transport_bracket_assembly](https://user-images.githubusercontent.com/48537944/173168094-8e724da4-6d37-4858-b55a-3e116a983f5c.jpg)
+Mount the transport onto the bracket using the original transport mounting screws.
+Mount the macro lens onto the camera.  
+Mount the camera onto the slider.  
+Turn the camera on and position it so that the film gate is visible and adjust the zoom so that the film gate covers most of the camera display. Set the slider knobs about half way of the travel. Now, slide the camera on the base board left and right and forward and backwards until the gate is centered in the camera display. Mark the position of the slider  on the base board. 
+
+
 ## Operation
 Very straight forward. Here is a short video showing the operation.  
 Plug in the 24V and 12V external power sources. Make sure that they are not reversed which can result in the Hawkeye2 board damage.  
