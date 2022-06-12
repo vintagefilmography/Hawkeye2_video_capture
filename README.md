@@ -43,7 +43,7 @@ Mount the transport onto the bracket using the original transport mounting screw
 The transport mounting will need additional support to prevent the film shake. Use an L bracket  
 https://www.homedepot.com/p/Everbilt-3-in-Black-Corner-Brace-4-Pack-13741/300985591
 and mount it as shown. Install the spacer underneath the bracket so that the transport sits perfectly vertical. The spacer is included in the mechanical folder. If the transport is not vertical then adjust the spacer accordingly. Tilted transport will cause focus issues.
-![L-bracket](https://user-images.githubusercontent.com/48537944/173199080-41cb0633-4f0e-4695-8817-de35bfda247c.jpg)
+![L-bracket1](https://user-images.githubusercontent.com/48537944/173203915-0b7c2205-18c9-4ed2-acd2-2f6386e38e1f.jpg)
 
 Mount the macro lens onto the camera.  
 Mount the camera onto the slider.  
@@ -51,7 +51,17 @@ Turn the camera on and position it so that the film gate is visible and adjust t
 Remove the camera from the slider.
 Place the slider upside down on the table and place a piece of white paper over it. Trace the outline and teh mounting holes as the first graders do.  
 https://craft-art.com/tracing-pictures/  
-Cut the outline with the scissors and place it on the board so that it is aligned with the marked up outline on the board done in the previous step. Drill the holes. Remove the paper template and mount the slider onto the board using the appropriate size screws.
+Cut the outline with the scissors and place it on the board so that it is aligned with the marked up outline on the board done in the previous step. Drill the holes. Remove the paper template and mount the slider onto the board using the appropriate size screws.  
+Light Mounting.  
+The light has to be mounted in front of the gate.  
+(This is still work in progress -- will be updated shortly)  
+Takeup reel mount.  
+Use the microphone stand
+https://www.amazon.com/dp/B07F82BPLV
+Remove the microphone adapter and install the takeup motor bracket. 
+Mount the takeup motor onto the bracket.
+
+
 
 
 
