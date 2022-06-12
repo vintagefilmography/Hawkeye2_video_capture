@@ -84,14 +84,46 @@ Afix the mounting bracket onto the base board by using two wood screws.
 Mount the SMC02 cntroller onto the controller mount but sliding it into the mount opening all the way until locked in. 
 Wire up the controller as shown.
 ![smc02-wiring](https://user-images.githubusercontent.com/48537944/173245893-993bcfc1-24d4-49e9-b0c8-dc20c5d2387e.jpg)
- 
 
-## Operation
-Very straight forward. Here is a short video showing the operation.  
-Plug in the 24V and 12V external power sources. Make sure that they are not reversed which can result in the Hawkeye2 board damage.  
+Stepper Installation  
+Mount the stepper onto the stepper racket using the M4 screws and nuts.
+Mount the sleeve over the motor shaft and then side the pulley over the sleeve. Do not tighten the locking slugs. 
+Align the pulley with the transport cam and install the belt. Slide the stepper assembly left and right on the base board until the belt is aligned and has 
+good enough tension on it. Mark up the stepper bracket location.  
+Remove the stepper from the bracket and install the bracket by using 2 wood screws. Mount the stepper back onto the bracket and install the belt.
 
 ## Tuning the Stepper  
-In video mode no stepper tuning is required. It is preprogrammed for 4 FPS.
+The FPS (fremes per second) of the film transport is not the same as the stepper RPS (revolutions per second) due to different pulley diameters.  
+The ratio has to be determined experimantally.  
+Connect the controller to a 24VDC source and turn the power on. The display should show initial operaional settings.
+![initial-display](https://user-images.githubusercontent.com/48537944/173248449-61d6c84f-3e33-40d6-957f-e613bfae9d6d.jpg)
+Press and hold the control knob until the unit goes into the setup mode.
+![setup1](https://user-images.githubusercontent.com/48537944/173248480-6f550683-0c8b-4399-b612-039b6713ef3c.jpg)
+turn the knob clockwise until F03 is displayed. 
+The bottom line will show the default 010.0  
+Pres the control knob again to enter the bottom line edit mode.
+The decimal value will be flashing. 
+The decimal value can be changed by rotatin the control knob, but leave it at zero.
+Press the knob again and the least significant digit will be flashing. Change it to 9.
+Press again and change the next digit to 2.
+Press again and change the first digit to 3.
+The lower display should  be reading 329.0 with number 3 flashing.
+Do the extended press to get out of the setup mode.
+Now 329.0 should be displayed on the top line and 0000 on teh bottom line.
+That sets the stepper RMP.
+Now we have to set the running mode for continuous operation.
+Do the extended press again to get into the setup mode.
+F01 will be displayed on the top line and P01 on teh bottom line.
+Press the control knob and the bottom line should be flashing.  
+Change the bottom to P03 by rotating teh control knob.  
+Do the extended press to get out of setup.
+
+Quick Test  
+Press the CW button - the motor should run clockwise and the film cam should rotate at 3 RPM.
+Press the stop button. The motor should stop.  
+Note: If the motor rotation is reversed then reverse the green and black wire connections.
+Another Note: The reverse speed is set to 10 rpm which is slow. If planning to use the reverse operation then the reverse speed is set by changing the F05 field  
+by using similar procedure as listed above.  
 
 ## Camera  
 The camera used should be capable of caustom frame rates. 
@@ -99,31 +131,39 @@ Sony A7iii supports custom rates but it is quite expensive.
 An alternative is to obtain the T3i body and add the macro lens. 
 The stock camera does not support the custom frame rates but there is a custom software available that enables   
 custom frame rates and raw video.
+Listed below are the instrustions on how to install Magic Lantern and set it up for FPS override, but before that here is a quick overview:  
+Download the build to your PC and unzip it.
+Format the SD card by the camera itself.
+Make sure your battery is fully charged. That is very important. You can ruin the camera if you do not follown these instructions carefully. 
+Install the SD card into the camera and power it up.  
+BTW - going forward any time you open the SD card cover, do not remove the  SD card immediately, wait for the red led to stop flashing.
+Set the camera to Manual mode
+Press the MENU button 
+Go to the second last screen and press the Firmware button.
+Double check the Magic Lantern instructions
+https://builds.magiclantern.fm/600D-102.html
+Do the update
+Recycle power and you are ready to go.
+
 Refer to https://magiclantern.fm/  
 for more details.
+Specifically refer to this page for the T3i:  
+https://builds.magiclantern.fm/600D-102.html
 For setting up the camera refer to:
 https://www.youtube.com/watch?v=NYGseJ7Sofk  
-Once the Magic lantern firmware is installed, you will have to tune the camera frame rate to the stepper speed. .
-Go to  the Magic Lantern Settings (delete key)
-Then select the video page.  
-Then select FPS Override  
-Set the frame rate to 4 FPS.  
-Turn Constant Expo to ON. This is important because if set to off the camera will pick up it own shutter speed.
-This is not mentioned in the referenced youtube video.
-Once done with these changes you can proceed to the tuning part. 
-![image](https://user-images.githubusercontent.com/48537944/172065363-53090a44-6c1e-469d-9352-3fc1c2dfb79d.png)  
-As shown in the attact picture, turn the camera on and turn on live preview. This will start teh Magic Lantern software. Then press the delete button. The settings screen will pop up. Go to  the Movie screen and select FPS OVerride. Then press the Q button on the T3i. Othe camera types will have a similar button. The FPS Override screen will pop up. 
+https://www.youtube.com/watch?v=RvZHmOgzm2Q&t=6s
+Once the Magic lantern firmware is installed, you will have to tune the camera frame rate to the stepper speed.  
+
+![image](https://user-images.githubusercontent.com/48537944/172065363-53090a44-6c1e-469d-9352-3fc1c2dfb79d.png) 
+Set the camera to Movie mode.
+Turn the camera on and turn on live preview. This will start the Magic Lantern software. Then press the delete button. The settings screen will pop up. Go to  the Movie screen and select FPS OVerride. Then press the Q button on the T3i. Other camera types will have a similar button. The FPS Override screen will pop up. 
 ![image](https://user-images.githubusercontent.com/48537944/172065508-eeb83ff0-b7ae-45aa-86df-2e59e3ea5d34.png)  
-Set the desired FPS to 4. 
-Go back to the FPS Override screen and set the Optimization for High FPS.
-Press the delete button again to get out of the settings screen.
-Run a test video with the projector running.   Make sure to set the shutter speed around 300 (use the wheel on the top of the camera)
-If the frame rates are off got back to the FPS Override screen and tweak the Timer B value one step at the time and rerun the test until the camera is in full sync with the projector.
-Timer A and B and used to set the frame rates and the exposure time. Generally the settings for these timers are not well explained so here is a short explanation that will potentially help.  
-The frame rate and the shutter speed  are derived from the main clock. the two timers are used to devide the clock down to get the right frame rates and exposure (shutter speed). Since we use a relatively slow frame rate of 3 FPS the danger is that the rolling shutter can cause some undesired distortions if the shutter speed is too high. The rolling shutter essentially grabs one line of teh sensor at the time so the scene will be different from the bottom and top line. I.e. the scene that was used for the bottom line will not be the same as the scene for the top line. It will be shifted at slow FPS producing the jello like effect. 
-This is why Magic Lantern restricts the values of the timers and changes them automatically to reduce the unwanted effects. But unfortunatelly the automatic mode is not very suitable for the film scan and could result in flicker. The way around it is to override the magic Lantern auto settings.  
-The good value for Timer B for this setup is FT-39. If your etup is different mechanically then you will have to adjust the values accordingly.  
-That is available on the FPS override screen.  
+Set the desired FPS to 3. 
+Go back to the FPS Override screen and set the Optimization for High FPS.  
+Timer A and B and used to set the frame rates and the exposure time. 
+Set Timer A to 584. The desired FPS shown should be 3.010  
+Note: If your pulley and film transport cam are different sizes then both the controller RPM and camera Timer A values will be different.  
+
 ![image](https://user-images.githubusercontent.com/48537944/172066458-05501697-061e-405c-bfe0-dad2fb506449.png)
 Scrawl down to the "Optimize for" line and hit the Q button.
 Set the optimization to High FPS.  
@@ -138,6 +178,9 @@ Venus Laowa is a pretty good pick. It has more than enough magnification and goo
 https://www.venuslens.net/product/laowa-25mm-f-2-8-2-5-5x-ultra-macro-2/  
 
 
+## Operation
+Very straight forward. Here is a short video showing the operation.  
+Plug in the 24V and 12V external power sources. Make sure that they are not reversed which can result in the Hawkeye2 board damage.  
 
 
 
