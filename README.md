@@ -52,18 +52,39 @@ Remove the camera from the slider.
 Place the slider upside down on the table and place a piece of white paper over it. Trace the outline and teh mounting holes as the first graders do.  
 https://craft-art.com/tracing-pictures/  
 Cut the outline with the scissors and place it on the board so that it is aligned with the marked up outline on the board done in the previous step. Drill the holes. Remove the paper template and mount the slider onto the board using the appropriate size screws.  
-Light Mounting.  
-The light has to be mounted in front of the gate.  
-(This is still work in progress -- will be updated shortly)  
-Takeup reel mount.  
-Use the microphone stand
-https://www.amazon.com/dp/B07F82BPLV
-Remove the microphone adapter and install the takeup motor bracket. 
-Mount the takeup motor onto the bracket.
+Light Mounting.    
+The light has to be mounted in front of the gate.    
+(This is still work in progress -- will be updated shortly)    
+Takeup reel mount.    
+Use the microphone stand  
+https://www.amazon.com/dp/B07F82BPLV  
+Remove the microphone adapter and install the takeup motor bracket.   
+Mount the takeup motor onto the bracket using the M3x8 screws  
+https://www.amazon.com/gp/product/B076J3W7R4  
+Slide the takeup spindle over the motor shaft.  
+Slide the takeup reel over the spindle.  
+Install an M3 wingnut onto the M3x25 flathead screw and tighten it.  
+Slide a flat M3 washer over the screw shaft to create the "clutch" mechanism.  
+Push the screw through the spindle center until it engages with the motor shaft.  
+Turn the wingnut in until snug. The tightness will determine the amount of pull on the film.  
+You do not want it too tight becaue it can cause film damage.  
+Solder two wires to the motor terminals.  
+Connect the wires to the speed controller.  
+https://www.amazon.com/gp/product/B071H2YQG5/  
+Connect the controller to the 12VDC source.  
 
+Proceed similarly with the supply reel. 
+Remove the mic adapter from the microphone stand. install the reel mount assembly onto the mic stand.
+Install the small clip onto the reel spindle using a small metal pin. 
+https://www.amazon.com/Neiko-50412A-Assortment-Storage-Pieces/dp/B076B4WT1V/
 
-
-
+![supply-reel-mount_assy](https://user-images.githubusercontent.com/48537944/173245376-b92633f0-b09d-489a-a38e-4be9c1ece796.jpg)
+Controller installation  
+Afix the mounting bracket onto the base board by using two wood screws.
+Mount the SMC02 cntroller onto the controller mount but sliding it into the mount opening all the way until locked in. 
+Wire up the controller as shown.
+![smc02-wiring](https://user-images.githubusercontent.com/48537944/173245893-993bcfc1-24d4-49e9-b0c8-dc20c5d2387e.jpg)
+ 
 
 ## Operation
 Very straight forward. Here is a short video showing the operation.  
