@@ -140,36 +140,42 @@ BTW - going forward any time you open the SD card cover, do not remove the  SD c
 Set the camera to Manual mode
 Press the MENU button 
 Go to the second last screen and press the Firmware button.
-Double check the Magic Lantern instructions
-https://builds.magiclantern.fm/600D-102.html
-Do the update
-Recycle power and you are ready to go.
+Double check the Magic Lantern instructions  
+https://builds.magiclantern.fm/600D-102.html  
+Do the update  
+Recycle power and you are ready to go.  
 
 Refer to https://magiclantern.fm/  
-for more details.
+for more details.  
 Specifically refer to this page for the T3i:  
-https://builds.magiclantern.fm/600D-102.html
-For setting up the camera refer to:
+https://builds.magiclantern.fm/600D-102.html  
+For setting up the camera refer to:  
 https://www.youtube.com/watch?v=NYGseJ7Sofk  
-https://www.youtube.com/watch?v=RvZHmOgzm2Q&t=6s
+https://www.youtube.com/watch?v=RvZHmOgzm2Q&t=6s  
 Once the Magic lantern firmware is installed, you will have to tune the camera frame rate to the stepper speed.  
 
-![image](https://user-images.githubusercontent.com/48537944/172065363-53090a44-6c1e-469d-9352-3fc1c2dfb79d.png) 
-Set the camera to Movie mode.
-Turn the camera on and turn on live preview. This will start the Magic Lantern software. Then press the delete button. The settings screen will pop up. Go to  the Movie screen and select FPS OVerride. Then press the Q button on the T3i. Other camera types will have a similar button. The FPS Override screen will pop up. 
+![image](https://user-images.githubusercontent.com/48537944/172065363-53090a44-6c1e-469d-9352-3fc1c2dfb79d.png)  
+Set the camera to Movie mode.  
+Turn the camera on and turn on live preview.  
+This will start the Magic Lantern software.  
+Then press the delete button.  
+The settings screen will pop up.  
+Go to  the Movie screen and select FPS OVerride.  
+Then press the Q button on the T3i. Other camera types will have a similar button.  
+The FPS Override screen will pop up.  
 ![image](https://user-images.githubusercontent.com/48537944/172065508-eeb83ff0-b7ae-45aa-86df-2e59e3ea5d34.png)  
-Set the desired FPS to 3. 
+Set the desired FPS to 3.  
 Go back to the FPS Override screen and set the Optimization for High FPS.  
 Timer A and B and used to set the frame rates and the exposure time. 
 Set Timer A to 584. The desired FPS shown should be 3.010  
 Note: If your pulley and film transport cam are different sizes then both the controller RPM and camera Timer A values will be different.  
 
-![image](https://user-images.githubusercontent.com/48537944/172066458-05501697-061e-405c-bfe0-dad2fb506449.png)
-Scrawl down to the "Optimize for" line and hit the Q button.
+![image](https://user-images.githubusercontent.com/48537944/172066458-05501697-061e-405c-bfe0-dad2fb506449.png)  
+Scrawl down to the "Optimize for" line and hit the Q button. 
 Set the optimization to High FPS.  
-This will allow for custom shutter speed. 
-There is a discussion on this topic in the Magic Lantern forum. It may help a bit.
-https://www.magiclantern.fm/forum/index.php?topic=4718.0;prev_next=prev#new
+This will allow for custom shutter speed.  
+There is a discussion on this topic in the Magic Lantern forum. It may help a bit.  
+https://www.magiclantern.fm/forum/index.php?topic=4718.0;prev_next=prev#new  
 
 
 ## Macro Lens
