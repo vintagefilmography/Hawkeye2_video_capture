@@ -153,7 +153,8 @@ https://builds.magiclantern.fm/600D-102.html
 For setting up the camera refer to:  
 https://www.youtube.com/watch?v=NYGseJ7Sofk  
 https://www.youtube.com/watch?v=RvZHmOgzm2Q&t=6s  
-Once the Magic lantern firmware is installed, you will have to tune the camera frame rate to the stepper speed.  
+Thsese two videos give you a pretty good idea on how to get set the 3 FPS but there are some devil details missing.  
+Will try to cover those in here.  
 
 ![image](https://user-images.githubusercontent.com/48537944/172065363-53090a44-6c1e-469d-9352-3fc1c2dfb79d.png)  
 Set the camera to Movie mode.  
