@@ -172,7 +172,7 @@ The FPS Override screen will pop up.
 Hit the Q button.  
 ![fps-set](https://user-images.githubusercontent.com/48537944/173411557-050bc2e0-c122-4d3a-8280-0a184a5e4afc.png)  
 
-Position highlight over desire FPS and hit Enter. Set desired FPS to 3 by using teh left and right keys.
+Position highlight over desire FPS and hit Enter. Set desired FPS to 3 by using the left and right keys.
   
  ![fps-set-to-3](https://user-images.githubusercontent.com/48537944/173412055-d738573a-8af2-4d1a-9759-3beae8309035.png)  
 Press enter again to go bach to the FOS Override screen. Select the "Optimize for" entry and hit Enter.
@@ -204,6 +204,13 @@ And that should be it.
 The shutter speed can be changed on the Expo screen.  
 
 ![shutter](https://user-images.githubusercontent.com/48537944/173415582-011e393d-8f19-4740-a6cb-866827e335f5.png)  
+
+The shutter rspeed can also be changed while scanning the film by using the main dial. Check the manual fo main dial location (tp of the cam).
+The light should be bright enough so that the shutter speed is 1/300 or faster. If the shutter is too slow than some image degradation can happen.
+It is to be noted that even at this fast shutter setting, due to low FPS you could experience some jello effect. The jelloo effect exhibits itself as a 
+the video shrinking and expanding as jello and can be very annoying. The cause is the rolling shutter which stores one image line at a time. At slow scan   
+there is a shift in the top of the image as compared to the bottom of the image i.e. by the time the scan gets to the bottom the scene has changed somewhat.   
+But on a positive note, the postprocessing done in DaVinci Resolve almost completely eliminates this degradation.   
 
 
 ## Macro Lens
