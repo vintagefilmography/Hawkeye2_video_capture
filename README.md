@@ -155,29 +155,55 @@ https://www.youtube.com/watch?v=NYGseJ7Sofk
 https://www.youtube.com/watch?v=RvZHmOgzm2Q&t=6s  
 Thsese two videos give you a pretty good idea on how to get set the 3 FPS but there are some devil details missing.  
 Will try to cover those in here.  
-
-![image](https://user-images.githubusercontent.com/48537944/172065363-53090a44-6c1e-469d-9352-3fc1c2dfb79d.png)  
 Set the camera to Movie mode.  
 Turn the camera on and turn on live preview.  
 This will start the Magic Lantern software.  
 Then press the delete button.  
 The settings screen will pop up.  
-Go to  the Movie screen and select FPS OVerride.  
+Go to  the Movie screen:  
+![movie-setup](https://user-images.githubusercontent.com/48537944/173410631-b84f37f3-2d22-4781-8dc5-e47198cf7e37.png)  
+Select FPS OVerride. Press enter to turn it on.  
+![fps-override-on](https://user-images.githubusercontent.com/48537944/173410928-b9465114-580a-4dc6-af3b-bd8bc54b9547.png)  
+
+ 
 Then press the Q button on the T3i. Other camera types will have a similar button.  
 The FPS Override screen will pop up.  
-![image](https://user-images.githubusercontent.com/48537944/172065508-eeb83ff0-b7ae-45aa-86df-2e59e3ea5d34.png)  
-Set the desired FPS to 3.  
-Go back to the FPS Override screen and set the Optimization for High FPS.  
-Timer A and B and used to set the frame rates and the exposure time. 
-Set Timer A to 584. The desired FPS shown should be 3.010  
-Note: If your pulley and film transport cam are different sizes then both the controller RPM and camera Timer A values will be different.  
+![fps-override-2point5](https://user-images.githubusercontent.com/48537944/173411311-96491cbb-5bef-4442-84dd-7921efc8d538.png)  
+Hit the Q button.  
+![fps-set](https://user-images.githubusercontent.com/48537944/173411557-050bc2e0-c122-4d3a-8280-0a184a5e4afc.png)  
 
-![image](https://user-images.githubusercontent.com/48537944/172066458-05501697-061e-405c-bfe0-dad2fb506449.png)  
-Scrawl down to the "Optimize for" line and hit the Q button. 
-Set the optimization to High FPS.  
-This will allow for custom shutter speed.  
-There is a discussion on this topic in the Magic Lantern forum. It may help a bit.  
-https://www.magiclantern.fm/forum/index.php?topic=4718.0;prev_next=prev#new  
+Position highlight over desire FPS and hit Enter. Set desired FPS to 3 by using teh left and right keys.
+  
+ ![fps-set-to-3](https://user-images.githubusercontent.com/48537944/173412055-d738573a-8af2-4d1a-9759-3beae8309035.png)  
+Press enter again to go bach to the FOS Override screen. Select the "Optimize for" entry and hit Enter.
+
+![optimize](https://user-images.githubusercontent.com/48537944/173412603-907a7f5f-5c9d-4de9-bf99-3acc218f2fad.png)  
+
+Select High FPS  
+
+![high-fps](https://user-images.githubusercontent.com/48537944/173412899-56c74262-194f-4700-8b71-c97da3110da7.png)  
+
+After selecting High FPS the camera will go back to the FPS override screen.  
+
+![fps-override-1](https://user-images.githubusercontent.com/48537944/173413521-0f9b0cf9-9c6b-4795-b0b9-f9728015c3db.png)  
+
+Select Advanced Mode.  
+
+![advanced-mode](https://user-images.githubusercontent.com/48537944/173413832-12f88ee1-d592-4d3f-a50c-26da8d39a673.png)  
+
+Select Timer A and press the left set key once. The Timer A value should change and the Actual FPS should change to 3.10
+
+![tune-fps](https://user-images.githubusercontent.com/48537944/173414357-af3ce939-8aa3-4b1e-8913-95226f334614.png)  
+
+Go back to the FPS Override screen.  
+
+![fps-override-2](https://user-images.githubusercontent.com/48537944/173414728-47bcc136-90b4-48be-8c7a-629bb855be54.png)  
+
+The FPS Override value on the screen should be shown as 3.010.  
+And that should be it.  
+The shutter speed can be changed on the Expo screen.  
+
+![shutter](https://user-images.githubusercontent.com/48537944/173415582-011e393d-8f19-4740-a6cb-866827e335f5.png)  
 
 
 ## Macro Lens
