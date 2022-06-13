@@ -95,28 +95,29 @@ Remove the stepper from the bracket and install the bracket by using 2 wood scre
 ## Tuning the Stepper  
 The FPS (fremes per second) of the film transport is not the same as the stepper RPS (revolutions per second) due to different pulley diameters.  
 The ratio has to be determined experimantally.  
-Connect the controller to a 24VDC source and turn the power on. The display should show initial operaional settings.
-![initial-display](https://user-images.githubusercontent.com/48537944/173248449-61d6c84f-3e33-40d6-957f-e613bfae9d6d.jpg)
-Press and hold the control knob until the unit goes into the setup mode.
-![setup1](https://user-images.githubusercontent.com/48537944/173248480-6f550683-0c8b-4399-b612-039b6713ef3c.jpg)
-turn the knob clockwise until F03 is displayed. 
+Connect the controller to a 24VDC source and turn the power on.  
+The display should show initial operaional settings.  
+![initial-display](https://user-images.githubusercontent.com/48537944/173248449-61d6c84f-3e33-40d6-957f-e613bfae9d6d.jpg)  
+Press and hold the control knob until the unit goes into the setup mode.  
+![setup1](https://user-images.githubusercontent.com/48537944/173248480-6f550683-0c8b-4399-b612-039b6713ef3c.jpg)  
+turn the knob clockwise until F03 is displayed.  
 The bottom line will show the default 010.0  
-Pres the control knob again to enter the bottom line edit mode.
-The decimal value will be flashing. 
-The decimal value can be changed by rotatin the control knob, but leave it at zero.
-Press the knob again and the least significant digit will be flashing. Change it to 9.
-Press again and change the next digit to 2.
-Press again and change the first digit to 3.
-The lower display should  be reading 329.0 with number 3 flashing.
-Do the extended press to get out of the setup mode.
-Now 329.0 should be displayed on the top line and 0000 on teh bottom line.
-That sets the stepper RMP.
-Now we have to set the running mode for continuous operation.
-Do the extended press again to get into the setup mode.
-F01 will be displayed on the top line and P01 on teh bottom line.
+Pres the control knob again to enter the bottom line edit mode.  
+The decimal value will be flashing.  
+The decimal value can be changed by rotatin the control knob, but leave it at zero.  
+Press the knob again and the least significant digit will be flashing. Change it to 9.  
+Press again and change the next digit to 2.  
+Press again and change the first digit to 3.  
+The lower display should  be reading 329.0 with number 3 flashing.  
+Do the extended press to get out of the setup mode.  
+Now 329.0 should be displayed on the top line and 0000 on the bottom line.  
+That sets the stepper RMP.  
+Now we have to set the running mode for continuous operation.  
+Do the extended press again to get into the setup mode.  
+F01 will be displayed on the top line and P01 on the bottom line.  
 Press the control knob and the bottom line should be flashing.  
-Change the bottom to P03 by rotating teh control knob.  
-Do the extended press to get out of setup.
+Change the bottom to P03 by rotating the control knob.  
+Do the extended press to get out of setup.  
 
 Quick Test  
 Press the CW button - the motor should run clockwise and the film cam should rotate at 3 RPM.
