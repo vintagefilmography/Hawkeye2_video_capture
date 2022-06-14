@@ -244,7 +244,8 @@ Expand the transformation entry on the right hand side and turn the Upside down 
 ![upside-down](https://user-images.githubusercontent.com/48537944/173480320-366daada-0fcd-46e0-97f8-a7f7ceb87d69.png)  
 Export the video into daVinci Resolve and complete all necessary postprocessing there as shown in the video below:  
 https://www.youtube.com/watch?v=u6UWJCQB7n0  
-
+If the video has noticable jello effect then apply the Resolve stabilizer as shown the video below.  
+https://www.youtube.com/watch?v=73zwjGcbhP4  
 
 
 
