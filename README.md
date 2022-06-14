@@ -220,8 +220,34 @@ https://www.venuslens.net/product/laowa-25mm-f-2-8-2-5-5x-ultra-macro-2/
 
 
 ## Operation
-Very straight forward. Here is a short video showing the operation.  
-Plug in the 24V and 12V external power sources. Make sure that they are not reversed which can result in the Hawkeye2 board damage.  
+Very straight forward.  
+Load the film.  
+Plug in the 24V and 12V external power sources. 12V is for teh takeup and 24 is for the controller.     
+Make sure that they are not reversed which can result in the takeup motor damage. 
+Turn the light on.  
+Connect the camera HDMI port to a monitor.  
+Turn the camera on and press the live view button. This will start Magic Lantern. 
+Press Live View again to start recording.  
+Press  the CW button on the controller.
+Once done with the recording, stop the camera by pressing the live view again abd stop the controller by pressing the stop button.  
+Remove the SD card and copy the MLV (Magic Lantern Video) to a PC.  
+
+## Post Processing  
+Download teh MLV app from:  
+https://mlv.app/  
+Install the app.  
+Open it up.  
+Drag the video into the session window as shown:  
+![mlv-drop-video](https://user-images.githubusercontent.com/48537944/173479549-8c4df25d-a010-47af-9b7b-28c063cb8ecd.png)  
+Expand the transformation entry on the right hand side and turn the Upside down control on.  
+
+![upside-down](https://user-images.githubusercontent.com/48537944/173480320-366daada-0fcd-46e0-97f8-a7f7ceb87d69.png)  
+Export the video into daVinci Resolve and complete all necessary postprocessing there as shown in the video below:  
+https://www.youtube.com/watch?v=u6UWJCQB7n0  
+
+
+
+
 
 
 
