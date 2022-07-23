@@ -104,7 +104,7 @@ turn the knob clockwise until F03 is displayed.
 The bottom line will show the default 010.0  
 Pres the control knob again to enter the bottom line edit mode.  
 The decimal value will be flashing.  
-The decimal value can be changed by rotatin the control knob, but leave it at zero.  
+The decimal value can be changed by rotating the control knob, but leave it at zero.  
 Press the knob again and the least significant digit will be flashing. Change it to 9.  
 Press again and change the next digit to 2.  
 Press again and change the first digit to 3.  
@@ -135,7 +135,7 @@ custom frame rates and raw video.
 Listed below are the instrustions on how to install Magic Lantern and set it up for FPS override, but before that here is a quick overview:  
 Download the build to your PC and unzip it.
 Format the SD card by the camera itself.
-Make sure your battery is fully charged. That is very important. You can ruin the camera if you do not follown these instructions carefully. 
+Make sure your battery is fully charged. That is very important. You can ruin the camera if you do not follow these instructions carefully. 
 Install the SD card into the camera and power it up.  
 BTW - going forward any time you open the SD card cover, do not remove the  SD card immediately, wait for the red led to stop flashing.
 Set the camera to Manual mode
@@ -153,7 +153,7 @@ https://builds.magiclantern.fm/600D-102.html
 For setting up the camera refer to:  
 https://www.youtube.com/watch?v=NYGseJ7Sofk  
 https://www.youtube.com/watch?v=RvZHmOgzm2Q&t=6s  
-Thsese two videos give you a pretty good idea on how to get set the 3 FPS but there are some devil details missing.  
+Thsese two videos give you a pretty good idea on how to set the 3 FPS but there are some devil details missing.  
 Will try to cover those in here.  
 Set the camera to Movie mode.  
 Turn the camera on and turn on live preview.  
@@ -175,7 +175,7 @@ Hit the Q button.
 Position highlight over desire FPS and hit Enter. Set desired FPS to 3 by using the left and right keys.
   
  ![fps-set-to-3](https://user-images.githubusercontent.com/48537944/173412055-d738573a-8af2-4d1a-9759-3beae8309035.png)  
-Press enter again to go bach to the FOS Override screen. Select the "Optimize for" entry and hit Enter.
+Press enter again to go bach to the FPS Override screen. Select the "Optimize for" entry and hit Enter.
 
 ![optimize](https://user-images.githubusercontent.com/48537944/173412603-907a7f5f-5c9d-4de9-bf99-3acc218f2fad.png)  
 
@@ -191,7 +191,9 @@ Select Advanced Mode.
 
 ![advanced-mode](https://user-images.githubusercontent.com/48537944/173413832-12f88ee1-d592-4d3f-a50c-26da8d39a673.png)  
 
-Select Timer A and press the left set key once. The Timer A value should change and the Actual FPS should change to 3.10
+Select Timer B. Leave it as is for now but remebmer how you got to this point becase you will need it later   
+for sync procedure.
+
 
 ![tune-fps](https://user-images.githubusercontent.com/48537944/173414357-af3ce939-8aa3-4b1e-8913-95226f334614.png)  
 
@@ -199,15 +201,13 @@ Go back to the FPS Override screen.
 
 ![fps-override-2](https://user-images.githubusercontent.com/48537944/173414728-47bcc136-90b4-48be-8c7a-629bb855be54.png)  
 
-The FPS Override value on the screen should be shown as 3.010.  
-And that should be it.  
 The shutter speed can be changed on the Expo screen.  
 
 ![shutter](https://user-images.githubusercontent.com/48537944/173415582-011e393d-8f19-4740-a6cb-866827e335f5.png)  
 
 The shutter rspeed can also be changed while scanning the film by using the main dial. Check the manual fo main dial location (tp of the cam).
 The light should be bright enough so that the shutter speed is 1/300 or faster. If the shutter is too slow than some image degradation can happen.
-It is to be noted that even at this fast shutter setting, due to low FPS you could experience some jello effect. The jelloo effect exhibits itself as a 
+It is to be noted that even at this fast shutter setting, due to low FPS you could experience some jello effect. The jello effect exhibits itself as a 
 the video shrinking and expanding as jello and can be very annoying. The cause is the rolling shutter which stores one image line at a time. At slow scan   
 there is a shift in the top of the image as compared to the bottom of the image i.e. by the time the scan gets to the bottom the scene has changed somewhat.   
 But on a positive note, the postprocessing done in DaVinci Resolve almost completely eliminates this degradation.   
@@ -218,11 +218,14 @@ There are many out there that will do the job.
 Venus Laowa is a pretty good pick. It has more than enough magnification and good image quality and it is reasonably priced.
 https://www.venuslens.net/product/laowa-25mm-f-2-8-2-5-5x-ultra-macro-2/  
 
+## Sync procedure
+Back it off and turn it away from the gate and point it to the cam (pulley). Adjust the speed control on the controller until the cam appears stationary. Actually it will jump up and down and possibly drift slowly. If the drift cannot be stopped by the speed control, then adjust the Magic Lantern Timer B to minimize the drift. Once done, refocus the camera back onto the gate. With this procedure I can run for several thousand frames without sync issues. It should be noted that the transport should be in good condition ensuring constant speed. It still may be possible that the drift catches up with you depending on the initial condition. In that case just run one step up for a few minutes if the drift is from the top, or one step down if the drift if coming from the bottom. Then switch back to the original speed. After that you can run for several thousand frames without sync issues
+![image](https://user-images.githubusercontent.com/48537944/180618061-7d2a6fb7-f8a7-4087-b8a3-5f7daaafc266.png)
 
 ## Operation
-Very straight forward.  
+
 Load the film.  
-Plug in the 24V and 12V external power sources. 12V is for teh takeup and 24 is for the controller.     
+Plug in the 24V and 12V external power sources. 12V is for the takeup and 24 is for the controller.     
 Make sure that they are not reversed which can result in the takeup motor damage. 
 Turn the light on.  
 Connect the camera HDMI port to a monitor.  
@@ -233,7 +236,7 @@ Once done with the recording, stop the camera by pressing the live view again ab
 Remove the SD card and copy the MLV (Magic Lantern Video) to a PC.  
 
 ## Post Processing  
-Download teh MLV app from:  
+Download the MLV app from:  
 https://mlv.app/  
 Install the app.  
 Open it up.  
