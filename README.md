@@ -250,6 +250,122 @@ https://www.youtube.com/watch?v=u6UWJCQB7n0
 If the video has noticable jello effect then apply the Resolve stabilizer as shown the video below.  
 https://www.youtube.com/watch?v=73zwjGcbhP4  
 
+## DaVinci Resolve  
+### Slow Motion interpolation with speed change  
+Save the VirtualDub2 video as a sequence of tiff images first.  
+Select all images and drag them into the media window of DR (DaVinci Resolve).  
+![image](https://user-images.githubusercontent.com/48537944/180619203-704e0f97-1912-41b4-a0dc-79f54f4bb59e.png)  
+ 
+You will get the images shown as a clip in the media window.  
+![image](https://user-images.githubusercontent.com/48537944/180619212-828a3de1-851f-4cf8-a7a2-47bfa6bb8676.png)  
+ 
+Right click on the clip, select the click attributes and set the frame rate if necessary  
+but you can leave it as is since the frame rate change can be done later.  
+Right click on the clip and create the timeline from it.  
+![image](https://user-images.githubusercontent.com/48537944/180619225-345b8e81-ec78-479b-94b7-e2f97adf7c30.png)  
+   
+Switch to Edit Mode.  
+![image](https://user-images.githubusercontent.com/48537944/180619234-86995e77-761f-44a0-9d12-d6ada4e905de.png)  
+   
+Click on project settings  
+![image](https://user-images.githubusercontent.com/48537944/180619243-e580c29c-0edf-44fb-81d3-7b2deffc2aa8.png)  
+
+Scroll the settings all the way down and change the retime process to optical flow (more info available here  
+htps://www.youtube.com/watch?v=m5cO3ZTfSr4 ).  
+![image](https://user-images.githubusercontent.com/48537944/180619256-29f35819-dcf0-4f69-85e8-94d3d8003348.png)  
+  
+Save the settings.  
+Now, right click on the clip and change the speed to whatever FPS needed.  
+![image](https://user-images.githubusercontent.com/48537944/180619268-b8178c8d-e158-4743-92fd-340c7e210da1.png)  
+ 
+Change the FPS to whatever required.   
+![image](https://user-images.githubusercontent.com/48537944/180619315-2dbbaf0f-2f1f-48d7-b8a9-6c3a3933df74.png)  
+ 
+Make sure that Ripple sequence is checked off. If not the clip duration will not change and the clip will be truncated.   
+Click on the change button. Note the clip duration change in the timeline window.  
+![image](https://user-images.githubusercontent.com/48537944/180619352-2ec00329-eefd-41fb-a8aa-9ccd77d733c9.png)  
+   
+Once done, complete other changes as necessary and then export the video by switching to deliver mode.  
+![image](https://user-images.githubusercontent.com/48537944/180619360-5407f6d7-aed8-4a67-9b4b-78735360357f.png)  
+   
+Change the video format to whatever you like.  
+![image](https://user-images.githubusercontent.com/48537944/180619378-b0e0d92c-463e-4605-9e59-d106182308f2.png)  
+
+  
+Add to render queue  
+![image](https://user-images.githubusercontent.com/48537944/180619395-ef1c1233-b613-4d20-a9e7-7a56be25882d.png)  
+ 
+And then start render.  
+![image](https://user-images.githubusercontent.com/48537944/180619406-686878cc-9b0b-4b1b-81fa-793b59724582.png)  
+ 
+  
+### Interpolation without Speed Change  
+The above instructions were for interpolated frames that result in smooth slow motion speed.  
+In many cases however we want to interpolate the frames but want to maintain the original speed.  
+In order to do that just follow the above instructions but do the following changes.  
+1.	Make sure your project settings are set to optical flow for retiming.  
+2.	Before creating the timeline set the clip attributes FPS to 60 FPS.  
+3.	Create new timeline  
+4.	Using the above procedure change timeline speed to 24 FPS or whatever final speed you need  
+The rest is the same as the above procedure.   
+Here are the details.  
+Project settings optical flow selection.  
+![image](https://user-images.githubusercontent.com/48537944/180619455-12188348-1c33-4169-89d3-2126d460e21a.png)    
+![image](https://user-images.githubusercontent.com/48537944/180619472-358fd16f-9dc0-4bfc-a6a0-b8dee4f0f4a2.png)    
+
+  
+ 
+Drag the images into the media window. Make sure all images are selected.  
+![image](https://user-images.githubusercontent.com/48537944/180619481-8ba11c67-dd62-42ce-8d37-5ee0768b0d79.png)  
+   
+Switch to edit mode if not already there.    
+![image](https://user-images.githubusercontent.com/48537944/180619490-9fe5d6c1-8b4f-48ff-8be0-1a5253c04d61.png)  
+   
+ Right click on the images file in the media window and select clip attributes.  
+ Set clip FPS to 60 or whatever interpolation rate you prefer.  
+![image](https://user-images.githubusercontent.com/48537944/180619499-66b07d4a-c497-45a7-b44c-6966d76eb3bb.png)   
+Click on OK.   
+Right click on the clip again and create the timeline. The timeline create window pops up.  
+Click on custom settings.  
+![image](https://user-images.githubusercontent.com/48537944/180619568-1988a295-b602-457b-a992-b2c11cec7259.png)  
+ 
+It is to be noted that in version 17.2 of DaVinci the timeline popup window is a bit different.  
+It does not have custom settings but it has a button to use the Poject Settings.  
+Make sure that button is not checked off. 
+![image](https://user-images.githubusercontent.com/48537944/180619574-8853da27-8870-420d-bec1-f48e559c691d.png)  
+  
+   
+
+Select Format tab and set the desired interpolation FPS.  
+![image](https://user-images.githubusercontent.com/48537944/180619589-226c44c1-573a-4007-8735-dcc559f3d300.png)  
+ 
+The new timeline will show up in the timeline window.  
+Right click on the timeline in the timeline window and select Change clip speed.  
+![image](https://user-images.githubusercontent.com/48537944/180619600-a8a8fc41-1e4a-43a5-988a-2de2381fea93.png)  
+  
+ 
+Change clip speed back to normal speed i.e. 24 or 18 FPS or whatever the original speed was.   
+You can also go lower if slow motion is preferred. Make sure Ripple sequence is checked off.  
+![image](https://user-images.githubusercontent.com/48537944/180619606-c68f281b-b053-4d03-a859-6c10d2425c68.png)  
+ 
+Note the clip stretching out after the speed change.   
+If t does not then make sure that Ripple sequence is checked off.  
+At that is basically it.   
+You can test run the clip to make sure that additional frames got added by stepping through the video (left, right arrows).  
+The next step is to render and save the video.  
+Switch to Deliver Mode.  
+![image](https://user-images.githubusercontent.com/48537944/180619623-8000a8ab-3fb0-4a8f-a379-966e5285d7ce.png)  
+   
+Select proper video format and add to render queue. 
+![image](https://user-images.githubusercontent.com/48537944/180619633-f6376daf-8817-432f-91b2-fc6f34be8866.png)  
+   
+Start rendering.  
+![image](https://user-images.githubusercontent.com/48537944/180619641-b2f8921d-034b-40f7-a57d-aac214f38538.png)  
+ 
+And that completes the procedure.  
+
+
+
 
 
 
