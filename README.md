@@ -245,16 +245,29 @@ Drag the video into the session window as shown:
 Expand the transformation entry on the right hand side and turn the Upside down control on.  
 
 ![upside-down](https://user-images.githubusercontent.com/48537944/173480320-366daada-0fcd-46e0-97f8-a7f7ceb87d69.png)  
-Export the video into daVinci Resolve and complete all necessary postprocessing there as shown in the video below:  
+Review the video to see if any sections have to be retaken. This app has pretty limited video edit capabilities  
+but it has lots of export formats suitable for popular video editors.  
+Open up export settings from File pulldown:  
+![image](https://user-images.githubusercontent.com/48537944/180661745-8ef49445-3754-4c26-add9-a49aab088496.png)  
+Select DNG uncompressed format if exporting to Resolve.  
+The DBG images take up lots of space but in return contain the raw information that can be utilied in DaVinci Resolve.  
+
+Export the video by using File->SaveVideo into the directory of your choice.  
+Close the mlvApp.  
+
+## DaVinci Resolve  
+Open up Davinci Resolve and drag the DNG images into it.
+![image](https://user-images.githubusercontent.com/48537944/180619203-704e0f97-1912-41b4-a0dc-79f54f4bb59e.png)  
+
 https://www.youtube.com/watch?v=u6UWJCQB7n0  
 If the video has noticable jello effect then apply the Resolve stabilizer as shown the video below.  
 https://www.youtube.com/watch?v=73zwjGcbhP4  
 
-## DaVinci Resolve  
+
 ### Slow Motion interpolation with speed change  
 Save the VirtualDub2 video as a sequence of tiff images first.  
 Select all images and drag them into the media window of DR (DaVinci Resolve).  
-![image](https://user-images.githubusercontent.com/48537944/180619203-704e0f97-1912-41b4-a0dc-79f54f4bb59e.png)  
+ 
  
 You will get the images shown as a clip in the media window.  
 ![image](https://user-images.githubusercontent.com/48537944/180619212-828a3de1-851f-4cf8-a7a2-47bfa6bb8676.png)  
