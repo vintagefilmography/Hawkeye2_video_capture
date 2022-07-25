@@ -258,6 +258,27 @@ Close the mlvApp.
 ## DaVinci Resolve  
 Open up Davinci Resolve and drag the DNG images into it.
 ![image](https://user-images.githubusercontent.com/48537944/180619203-704e0f97-1912-41b4-a0dc-79f54f4bb59e.png)  
+  
+Right click on the clip and create the new timeline:  
+![image](https://user-images.githubusercontent.com/48537944/180694116-937ee76a-168a-4275-98ae-e95b0bc34643.png)  
+Click on Custom Settings and change the frame rate to what you need.
+Switch to Edit Mode:  
+![image](https://user-images.githubusercontent.com/48537944/180694518-8c3ce3cc-6a11-4e9b-a1d0-4220dcd03903.png)  
+In the transform area on the right hand side, rotate the video by 180 degrees.  
+![image](https://user-images.githubusercontent.com/48537944/180694747-e9a97d54-78d8-4ac5-8679-075879563a2a.png)  
+Switch to color edit mode. Select Camera Raw and Decode using Clip as shown:  
+![image](https://user-images.githubusercontent.com/48537944/180695224-1fa51c51-9f6c-4720-8a38-9d6c45401b00.png)  
+Adjust exposure as shown:  
+![image](https://user-images.githubusercontent.com/48537944/180695545-dfea4c00-e529-47d1-ad65-131dfeffec46.png)  
+If the video shows a jello effect then this would have need adjustment.  
+Go back to the edit mode:  
+In the transform area on the right hand side scroll down to Stabilization.  
+Set mode to Perspective.  
+Turn on zoom and then adjust stabilization parameters as needed. It will be a trial and error process. Too little and the  
+video will be wavey and too much will cause severe clipping and loss of resolution.  
+![image](https://user-images.githubusercontent.com/48537944/180696604-039487f6-b116-4e44-9e9d-1da32f21ff1e.png)  
+Click on the stabilize button to run stabilization. It may take a while. 
+
 
 https://www.youtube.com/watch?v=u6UWJCQB7n0  
 If the video has noticable jello effect then apply the Resolve stabilizer as shown the video below.  
